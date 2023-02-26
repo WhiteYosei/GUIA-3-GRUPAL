@@ -19,7 +19,7 @@ package centralPacientes.mundo;
  * 
  */
 /**
-TEST
+ *
  *
  */
 public class Paciente {
