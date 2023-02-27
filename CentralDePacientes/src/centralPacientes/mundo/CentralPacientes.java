@@ -168,15 +168,29 @@ public class CentralPacientes {
     /**
      * Retorna la cantidad de hombres que hay en la lista
      */
-    public int cantHombres() {
-        return 0;
+    public int cantHombres()
+    {
+        int count = 0;
+        for (int i = 0; i<pacientes.size(); i++ ) {
+            if (pacientes.get(i).darSexo() == 1){
+                count ++;
+            }
+        }
+        return count;
     }
 
     /**
      * Retorna la cantidad de mujeres que hay en la lista
      */
-    public int cantMujeres() {
-        return 0;
+    public int cantMujeres()
+    {
+        int count = 0;
+        for (int i = 0; i<pacientes.size(); i++ ) {
+            if (pacientes.get(i).darSexo() == 2){
+                count ++;
+            }
+        }
+        return count;
     }
 
     /**
@@ -185,8 +199,60 @@ public class CentralPacientes {
      *
      * @return nombre de la clínica
      */
-    public String metodo4() {
-        return "Respuesta 4";
+    public String metodo4()
+    {
+        int count = 0;
+        int counta = 0;
+        int countb = 0;
+        int countc = 0;
+        int countd = 0;
+        int counte = 0;
+        String mayor = "Clinica del Country";
+        int greatest = count;
+
+        for (int i = 0; i<pacientes.size(); i++ ) {
+
+            if (pacientes.get(i).darClinica().equals(listaClinicas.get(0))){
+                count ++;
+            }
+            else if (pacientes.get(i).darClinica().equals(listaClinicas.get(1))){
+                counta ++;
+            }
+            else if (pacientes.get(i).darClinica().equals(listaClinicas.get(2))){
+                countb ++;
+            }
+            else if (pacientes.get(i).darClinica().equals(listaClinicas.get(3))){
+                countc ++;
+            }
+            else if (pacientes.get(i).darClinica().equals(listaClinicas.get(4))){
+                countd ++;
+            }
+            else if (pacientes.get(i).darClinica().equals(listaClinicas.get(5))){
+                counte ++;
+            }
+        }
+         if (greatest<counta){
+             mayor = "Clinica Palermo";
+             greatest = counta;
+         }
+        if (greatest<countb){
+            mayor = "Clinica Reina Sofia";
+            greatest = countb;
+        }
+        if (greatest<countc){
+            mayor = "Clinica el Bosque";
+            greatest = countc;
+        }
+        if (greatest<countd){
+            mayor = "Clinica San Ignacio";
+            greatest = countd;
+        }
+        if (greatest<counte){
+            mayor = "Otra";
+            greatest = counte;
+        }
+
+        return mayor;
     }
 
 
