@@ -13,7 +13,7 @@
 package centralPacientes.mundo;
 
 /**
- * Excepción que informa que el paciente que se va a agregar ya está registrado en la central
+ * se empieza trabajo 1
  */
 public class YaExisteException extends Exception {
     // -----------------------------------------------------------------

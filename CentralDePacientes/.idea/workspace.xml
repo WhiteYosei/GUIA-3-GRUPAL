@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1571c1f4-ae4a-4251-8f17-8f1bec3b7b71" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/interfaz/DialogoInsertarPaciente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/interfaz/DialogoInsertarPaciente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/interfaz/DialogoMostrarInformarcionPaciente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/interfaz/DialogoMostrarInformarcionPaciente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/interfaz/DialogoOpcionesInsertar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/interfaz/DialogoOpcionesInsertar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/interfaz/InterfazCentralPacientes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/interfaz/InterfazCentralPacientes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/interfaz/PanelExtension.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/interfaz/PanelExtension.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/interfaz/PanelImagen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/interfaz/PanelImagen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/interfaz/PanelInformacionPaciente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/interfaz/PanelInformacionPaciente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/interfaz/PanelListaPacientes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/interfaz/PanelListaPacientes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/interfaz/PanelOpcionesInsertar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/interfaz/PanelOpcionesInsertar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/mundo/CentralPacientes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/mundo/CentralPacientes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/mundo/NoExisteException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/mundo/NoExisteException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/mundo/Paciente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/mundo/Paciente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/mundo/YaExisteException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CentralDePacientes/centralPacientes/mundo/YaExisteException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/centralPacientes/mundo/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/centralPacientes/mundo/Paciente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/centralPacientes/mundo/Copia de YaExisteException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/centralPacientes/mundo/Copia de YaExisteException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EvaluadorPostfijo/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EvaluadorPostfijo/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
