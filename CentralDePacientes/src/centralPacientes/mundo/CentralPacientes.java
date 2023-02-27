@@ -207,8 +207,7 @@ public class CentralPacientes {
         int countc = 0;
         int countd = 0;
         int counte = 0;
-        String mayor = "Clinica del Country";
-        int greatest = count;
+
 
         for (int i = 0; i<pacientes.size(); i++ ) {
 
@@ -231,25 +230,27 @@ public class CentralPacientes {
                 counte ++;
             }
         }
+        String mayor = listaClinicas.get(0);
+        int greatest = count;
+
          if (greatest<counta){
-             mayor = "Clinica Palermo";
+             mayor = listaClinicas.get(1);
              greatest = counta;
          }
         if (greatest<countb){
-            mayor = "Clinica Reina Sofia";
+            mayor = listaClinicas.get(2);
             greatest = countb;
         }
         if (greatest<countc){
-            mayor = "Clinica el Bosque";
+            mayor = listaClinicas.get(3);
             greatest = countc;
         }
         if (greatest<countd){
-            mayor = "Clinica San Ignacio";
+            mayor = listaClinicas.get(4);
             greatest = countd;
         }
         if (greatest<counte){
-            mayor = "Otra";
-            greatest = counte;
+            mayor = listaClinicas.get(5);
         }
 
         return mayor;
