@@ -24,7 +24,7 @@ public class CentralPacientes {
     /**
      * Lista de pacientes
      */
-    private ArrayList<Paciente> pacientes;
+    private ArrayList<Paciente> pacientes = new ArrayList<>();
 
     /**
      * Vector de clínicas manejadas por la central
@@ -39,7 +39,6 @@ public class CentralPacientes {
      * Crea una nueva central sin pacientes y con una lista predefinida de clínicas
      */
     public CentralPacientes() {
-        pacientes = new ArrayList<>();
 
         listaClinicas = new ArrayList<>();
         listaClinicas.add("Clínica del Country");
@@ -70,7 +69,9 @@ public class CentralPacientes {
      *            pac!=null y no existe un paciente con código igual a pac.codigo
      */
     public void agregarPacienteAlComienzo(Paciente pac) {
+
         // TODO: Realiar el método que agrega al principio
+        pacientes.add(0,pac);
     }
 
     /**
@@ -81,13 +82,23 @@ public class CentralPacientes {
      */
     public void agregarPacienteAlFinal(Paciente pac) {
         // TODO: Agragar un paciente al final de la lista
+        pacientes.add(pac);
     }
 
     /**
      * Adiciona un paciente a la lista de pacientes antes del paciente con el código especificado. <br>
      */
     public void agregarPacienteAntesDe(int cod, Paciente pac) throws NoExisteException {
-        // TODO: Agrega un paciente después del paciente con el código dado
+        // TODO: Agrega un paciente antes del paciente con el código dado
+
+        for (int i = 0; i<pacientes.size(); i++ ) {
+            if (pacientes.get(i).darCodigo() == cod){
+                pacientes.add(i,pac);
+                break;
+            }
+        }
+
+
     }
 
     /**
@@ -95,13 +106,25 @@ public class CentralPacientes {
      */
     public void agregarPacienteDespuesDe(int cod, Paciente pac) throws NoExisteException {
         // TODO: Agrega un paciente después del paciente con el código cod
+        for (int i = 0; i<pacientes.size(); i++ ) {
+            if (pacientes.get(i).darCodigo() == cod){
+                pacientes.add(i+1,pac);
+                break;
+            }
+        }
     }
 
     /**
      * Busca el paciente con el código dado en la lista de pacientes.
      */
     public Paciente localizar(int codigo) {
-        return null;
+        Paciente p = null;
+        for (int i = 0; i<pacientes.size(); i++ ) {
+            if (pacientes.get(i).darCodigo() == codigo) {
+                p = pacientes.get(i);
+            }
+        }
+        return p;
     }
 
     /**
@@ -109,6 +132,12 @@ public class CentralPacientes {
      */
     public void eliminarPaciente(int cod) throws NoExisteException {
         // TODO: Si no existe el paciente con el código dado, genera la excepción
+        for (int i = 0; i<pacientes.size(); i++ ) {
+            if (pacientes.get(i).darCodigo() == cod){
+                pacientes.remove(i);
+                break;
+            }
+        }
     }
 
     /**
@@ -139,15 +168,29 @@ public class CentralPacientes {
     /**
      * Retorna la cantidad de hombres que hay en la lista
      */
-    public int cantHombres() {
-        return 0;
+    public int cantHombres()
+    {
+        int count = 0;
+        for (int i = 0; i<pacientes.size(); i++ ) {
+            if (pacientes.get(i).darSexo() == 1){
+                count ++;
+            }
+        }
+        return count;
     }
 
     /**
      * Retorna la cantidad de mujeres que hay en la lista
      */
-    public int cantMujeres() {
-        return 0;
+    public int cantMujeres()
+    {
+        int count = 0;
+        for (int i = 0; i<pacientes.size(); i++ ) {
+            if (pacientes.get(i).darSexo() == 2){
+                count ++;
+            }
+        }
+        return count;
     }
 
     /**
@@ -156,8 +199,61 @@ public class CentralPacientes {
      *
      * @return nombre de la clínica
      */
-    public String metodo4() {
-        return "Respuesta 4";
+    public String metodo4()
+    {
+        int count = 0;
+        int counta = 0;
+        int countb = 0;
+        int countc = 0;
+        int countd = 0;
+        int counte = 0;
+
+
+        for (int i = 0; i<pacientes.size(); i++ ) {
+
+            if (pacientes.get(i).darClinica().equals(listaClinicas.get(0))){
+                count ++;
+            }
+            else if (pacientes.get(i).darClinica().equals(listaClinicas.get(1))){
+                counta ++;
+            }
+            else if (pacientes.get(i).darClinica().equals(listaClinicas.get(2))){
+                countb ++;
+            }
+            else if (pacientes.get(i).darClinica().equals(listaClinicas.get(3))){
+                countc ++;
+            }
+            else if (pacientes.get(i).darClinica().equals(listaClinicas.get(4))){
+                countd ++;
+            }
+            else if (pacientes.get(i).darClinica().equals(listaClinicas.get(5))){
+                counte ++;
+            }
+        }
+        String mayor = listaClinicas.get(0);
+        int greatest = count;
+
+         if (greatest<counta){
+             mayor = listaClinicas.get(1);
+             greatest = counta;
+         }
+        if (greatest<countb){
+            mayor = listaClinicas.get(2);
+            greatest = countb;
+        }
+        if (greatest<countc){
+            mayor = listaClinicas.get(3);
+            greatest = countc;
+        }
+        if (greatest<countd){
+            mayor = listaClinicas.get(4);
+            greatest = countd;
+        }
+        if (greatest<counte){
+            mayor = listaClinicas.get(5);
+        }
+
+        return mayor;
     }
 
 
