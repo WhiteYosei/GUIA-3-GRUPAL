@@ -46,6 +46,8 @@
 }</component>
   <component name="RunManager">
     <configuration name="InterfazCentralPacientes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="centralPacientes.interfaz.InterfazCentralPacientes" />
       <module name="CentralDePacientes" />
       <extension name="coverage">
