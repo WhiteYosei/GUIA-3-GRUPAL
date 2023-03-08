@@ -31,6 +31,29 @@ public class EvaluadorPostfijo {
      */
     static int evaluarPostFija(List<String> expresion) {
         Stack<Integer> pila = new Stack<>();
+        for (int i = 0; i < expresion.size(); i = i + 1){
+            if (expresion.get(i).equals("+") || expresion.get(i).equals("-") ||
+                    expresion.get(i).equals("*") || expresion.get(i).equals("/") ||
+                    expresion.get(i).equals("%") || expresion.get(i).equals("^")){
+                int y = pila.pop();
+                int x = pila.pop();
+                int result = 0;
+                if (expresion.get(i).equals("+")){
+                    result = y + x;
+                } else if (expresion.get(i).equals("-")) {
+                    result = y - x;
+                } else if (expresion.get(i).equals("+")) {
+                    result = y * x;
+                } else if (expresion.get(i).equals("/")) {
+                    result = y / x;
+                } else if (expresion.get(i).equals("%")) {
+                    result = y & x;
+                } else {
+                    result = y ^ x;
+                }
+                pila.push(result);
+            }
+        }
 
         // TODO: Realiza la evaluación de la expresión en formato postfijo
 
