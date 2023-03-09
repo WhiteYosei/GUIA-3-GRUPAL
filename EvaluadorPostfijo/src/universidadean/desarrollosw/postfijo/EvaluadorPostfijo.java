@@ -58,7 +58,7 @@ public class EvaluadorPostfijo {
             }
         }
 
-        // TODO: Realiza la evaluación de la expresión en formato postfijo
+        //  Realiza la evaluación de la expresión en formato postfijo
 
         return pila.pop();
     }
