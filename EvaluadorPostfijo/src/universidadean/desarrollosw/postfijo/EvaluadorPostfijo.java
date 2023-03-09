@@ -53,6 +53,9 @@ public class EvaluadorPostfijo {
                 }
                 pila.push(result);
             }
+            else {
+                pila.push.
+            }
         }
 
         // TODO: Realiza la evaluación de la expresión en formato postfijo
