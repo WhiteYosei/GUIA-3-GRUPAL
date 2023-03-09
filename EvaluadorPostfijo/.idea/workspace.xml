@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4876747-caec-484f-91c2-08348a5869d7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../CentralDePacientes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CentralDePacientes/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/universidadean/desarrollosw/postfijo/EvaluadorPostfijo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/universidadean/desarrollosw/postfijo/EvaluadorPostfijo.java" afterDir="false" />
     </list>
@@ -38,7 +39,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/squic/Downloads/EvaluadorPostfijo/EvaluadorPostfijo"
   }
 }]]></component>
   <component name="RunManager">

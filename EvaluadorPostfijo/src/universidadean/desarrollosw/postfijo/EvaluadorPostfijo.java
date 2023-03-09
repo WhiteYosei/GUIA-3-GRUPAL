@@ -34,7 +34,7 @@ public class EvaluadorPostfijo {
         for (int i = 0; i < expresion.size(); i = i + 1){
             if (expresion.get(i).equals("+") || expresion.get(i).equals("-") ||
                     expresion.get(i).equals("*") || expresion.get(i).equals("/") ||
-                    expresion.get(i).equals("%") || expresion.get(i).equals("^")){
+                    expresion.get(i).equals("%") || expresion.get(i).equals("^")) {
                 int y = pila.pop();
                 int x = pila.pop();
                 int result = 0;
@@ -42,23 +42,23 @@ public class EvaluadorPostfijo {
                     result = y + x;
                 } else if (expresion.get(i).equals("-")) {
                     result = y - x;
-                } else if (expresion.get(i).equals("+")) {
+                } else if (expresion.get(i).equals("*")) {
                     result = y * x;
                 } else if (expresion.get(i).equals("/")) {
                     result = y / x;
                 } else if (expresion.get(i).equals("%")) {
-                    result = y & x;
+                    result = y % x;
                 } else {
-                    result = y ^ x;
+                    result = (int) Math.pow(y, x);
                 }
                 pila.push(result);
             }
             else {
-                pila.push.
+                pila.push(Integer.parseInt(expresion.get(i)));
             }
         }
 
-        //  Realiza la evaluación de la expresión en formato postfijo
+        // TODO: Realiza la evaluación de la expresión en formato postfijo
 
         return pila.pop();
     }
