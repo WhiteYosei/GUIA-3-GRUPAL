@@ -31,6 +31,7 @@ public class EvaluadorPostfijo {
      */
     static int evaluarPostFija(List<String> expresion) {
         Stack<Integer> pila = new Stack<>();
+        //ssna dxadsj
 
         // TODO: Realiza la evaluación de la expresión en formato postfijo
 
